@@ -1,0 +1,87 @@
+.calculator{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+   padding: 8vw;
+    height: 20vh;
+    margin-left: 25vw;
+    background: linear-gradient(pink,purple);
+    box-shadow: 2px -3px purple;
+    border-radius: 28px;
+}
+button{
+    width: 5vw;
+    height: 6vh;
+    background-color: darkred;
+    color: white;
+    border-radius: 40px;
+    margin: 1vh 1vw;
+    font-size: large;
+}
+button:hover{
+    background-color: white;
+    border: 1px solid darkred;
+    color: darkred;
+}
+input{
+    width: 25vw;
+    height: 6vh;
+    border: 2px solid darkred;
+    margin-bottom: 1vh;
+    border-radius: 25px;
+    text-align: right;
+    font-size: large;
+}
+nav{
+    height: 8vh;
+    background-color: green;
+    color: white;
+    padding: 2vw;
+}
+h1{
+    color: purple;
+    text-align: center;
+}
+
+@media screen and (max-width: 400px){
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+    button{
+        width: 15vw;
+    }
+    .calculator{
+        display: block;
+        width: 80vw;
+        margin: 0px;
+        height: 40vh;
+    }
+    input{
+        width: 70vw;
+    }
+}
+@media screen and (max-width:700px) {
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+    .calculator{
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        height: 60vh;
+        margin: 5vw;
+    }
+    button{
+        width: 12vw;
+        height: 8vh;
+    }
+    input{
+        width: 55vw;
+    }
+    
+}
